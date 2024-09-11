@@ -26,7 +26,7 @@ function App() {
     try {
       setLoading(true);
       //const response = await axios.post('https://medeye-backend.onrender.com/predict', formData, {  // Update with your backend URL
-      const response = await axios.post('https://med-cnn-backend.onrender.com:5000/predict', formData, { 
+      const response = await axios.post('https://med-cnn-backend.onrender.com/predict', formData, { 
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResult(`Diagnosis Result: Severity Level ${response.data.severity}`);
